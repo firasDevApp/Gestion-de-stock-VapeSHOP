@@ -20,7 +20,7 @@ const Login = () => {
   e.preventDefault();
   try {
     const response = await axios.post(
-      'https://gestion-de-stock-vape-shop-api.vercel.app/auth/login',
+      'http://localhost:5000/auth/login',
       { email, password },
       { withCredentials: true }
     );

@@ -23,7 +23,7 @@ const Employe = () => {
 
   const fetchUsers = async () => {
     try {
-        const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/employes', {
+        const response = await axios.get('http://localhost:5000/api/employes', {
        withCredentials: true,
     });
       setUsers(response.data);

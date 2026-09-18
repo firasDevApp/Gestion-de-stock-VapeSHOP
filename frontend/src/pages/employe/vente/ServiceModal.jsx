@@ -16,7 +16,7 @@ const ServiceModal = ({ show, onHide, OnVente }) => {
   e.preventDefault();
   try {
     await axios.post(
-      'https://gestion-de-stock-vape-shop-api.vercel.app/api/services',
+      'http://localhost:5000/api/services',
       form,
       {
         withCredentials: true // 🔐 on utilise les cookies HttpOnly

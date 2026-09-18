@@ -25,7 +25,7 @@ const ForgotPasswordModal = ({ show, onHide }) => {
 
   const handleStep1 = async () => {
     try {
-      const res = await axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/auth/forgot-password/step1', { email });
+      const res = await axios.post('http://localhost:5000/auth/forgot-password/step1', { email });
       setMessage(res.data.message);
       setVariant('success');
       setToken(res.data.token);
@@ -38,7 +38,7 @@ const ForgotPasswordModal = ({ show, onHide }) => {
 
   const handleStep2 = async () => {
     try {
-      const res = await axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/auth/forgot-password/step2', { code, token });
+      const res = await axios.post('http://localhost:5000/auth/forgot-password/step2', { code, token });
       setMessage(res.data.message);
       setVariant('success');
       setToken(res.data.token); // Nouveau token pour step3
@@ -51,7 +51,7 @@ const ForgotPasswordModal = ({ show, onHide }) => {
 
   const handleStep3 = async () => {
     try {
-      const res = await axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/auth/forgot-password/step3', {
+      const res = await axios.post('http://localhost:5000/auth/forgot-password/step3', {
         password,
         confirmPassword,
         token,

@@ -117,7 +117,7 @@ const HistoriqueVente = () => {
 
   const fetchFinance = async () => {
     try {
-        const res = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/ventes/group', {
+        const res = await axios.get('http://localhost:5000/api/ventes/group', {
        withCredentials: true,
     });
       console.log("VENTES :", res.data); // Debug

@@ -15,7 +15,7 @@ const StockTables = () => {
 
   useEffect(() => {
     
-    axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/finance/stock', {
+    axios.get('http://localhost:5000/api/finance/stock', {
        withCredentials: true,
     })
       .then(res => setStock(res.data))

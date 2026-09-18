@@ -27,7 +27,7 @@ const VenteVapeModal = ({ show, vapes, onHide, OnVente }) => {
     };
 
     
-    axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/api/ventes', venteData, {
+    axios.post('http://localhost:5000/api/ventes', venteData, {
        withCredentials: true,
     })
       .then(() => {

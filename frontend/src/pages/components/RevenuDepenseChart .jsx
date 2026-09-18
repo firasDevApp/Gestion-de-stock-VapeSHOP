@@ -21,7 +21,7 @@ const RevenuDepenseChart = () => {
 
     try {
       
-      const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/statistiques/revenu-depense', {
+      const response = await axios.get('http://localhost:5000/api/statistiques/revenu-depense', {
         params: { year },
         withCredentials: true,
       });

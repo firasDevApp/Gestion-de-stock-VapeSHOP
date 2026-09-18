@@ -17,7 +17,7 @@ const Sidebar = ({ isActive }) => {
  const handleLogout = async () => {
   try {
     await axios.post(
-      'https://gestion-de-stock-vape-shop-api.vercel.app/auth/logout',
+      'http://localhost:5000/auth/logout',
       {},
       { withCredentials: true }
     );

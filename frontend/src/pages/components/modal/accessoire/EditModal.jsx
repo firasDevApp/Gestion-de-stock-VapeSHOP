@@ -37,7 +37,7 @@ const EditModal = ({ OnUpdate, accessoire }) => {
     e.preventDefault();
     try {
 
-      await axios.put(`https://gestion-de-stock-vape-shop-api.vercel.app/api/accessoires/${accessoire._id}`, form, {
+      await axios.put(`http://localhost:5000/api/accessoires/${accessoire._id}`, form, {
          withCredentials: true,
       });
       OnUpdate();

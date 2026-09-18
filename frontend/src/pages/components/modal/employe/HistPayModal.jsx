@@ -23,7 +23,7 @@ const HistPayModal = ({ user }) => {
     setMessage('');
     try {
      
-      const response = await axios.get(`https://gestion-de-stock-vape-shop-api.vercel.app/api/salary/employe/${user._id}`, {
+      const response = await axios.get(`http://localhost:5000/api/salary/employe/${user._id}`, {
          withCredentials: true,
       });
       setHistorique(response.data);

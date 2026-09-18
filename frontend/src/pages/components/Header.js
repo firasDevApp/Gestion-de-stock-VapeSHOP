@@ -13,7 +13,7 @@ const Header = ({ toggleSidebar }) => {
   const [user, setUser] = useState([]);
   const fetchUser = async () => {
     try {
-        const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/settings/profile', {
+        const response = await axios.get('http://localhost:5000/api/settings/profile', {
        withCredentials: true,
     });
       setUser(response.data);

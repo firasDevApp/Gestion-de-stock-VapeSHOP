@@ -29,7 +29,7 @@ const PayModal = ({ OnPay, user }) => {
     setLoading(true);
     try {
      
-      const response = await axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/api/salary', {
+      const response = await axios.post('http://localhost:5000/api/salary', {
         userId: user._id,
         mois,
         montantAvance: Number(montantAvance)

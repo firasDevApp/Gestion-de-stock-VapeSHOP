@@ -23,7 +23,7 @@ const LineVenteChart = () => {
 
     try {
       
-      const res = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/statistiques/ventes-par-semaine-fixe', {
+      const res = await axios.get('http://localhost:5000/api/statistiques/ventes-par-semaine-fixe', {
         params: { startDate },
          withCredentials: true,
       });

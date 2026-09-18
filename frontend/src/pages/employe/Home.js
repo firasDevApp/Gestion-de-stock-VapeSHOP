@@ -71,7 +71,7 @@ const Home = () => {
 
 const fetchServices = async () => {
     try {
-         const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/services', {
+         const response = await axios.get('http://localhost:5000/api/services', {
       withCredentials: true,
     });
       setServices(response.data);
@@ -82,7 +82,7 @@ const fetchServices = async () => {
 const fetchLiquide = async () => {
   try {
     
-    const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/liquides/filter', {
+    const response = await axios.get('http://localhost:5000/api/liquides/filter', {
       withCredentials: true,
     });
 
@@ -108,7 +108,7 @@ const fetchLiquide = async () => {
 const fetchAccessoires = async () => {
     try {
        
-      const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/accessoires', {
+      const response = await axios.get('http://localhost:5000/api/accessoires', {
       withCredentials: true,
     });
       setAccessoires(response.data);
@@ -119,7 +119,7 @@ const fetchAccessoires = async () => {
 const fetchVapes = async () => {
     try {
        
-      const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/vapes', {
+      const response = await axios.get('http://localhost:5000/api/vapes', {
       withCredentials: true,
     });
       setVapes(response.data);
@@ -129,7 +129,7 @@ const fetchVapes = async () => {
   };
 const fetchstatistique = async () => {
     try {
-     const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/statistiques/nbProduits', {
+     const response = await axios.get('http://localhost:5000/api/statistiques/nbProduits', {
        withCredentials: true,
     });
       setProduits(response.data);

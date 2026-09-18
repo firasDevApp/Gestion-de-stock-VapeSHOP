@@ -26,7 +26,7 @@ const VenteLiquideBFModal = ({ show, liquides, onHide, OnVente }) => {
     total: quantite * liquide.prix_vente,
   };
 
-  axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/api/ventes', venteData, {
+  axios.post('http://localhost:5000/api/ventes', venteData, {
     withCredentials: true, // 🔒 active l'envoi automatique du cookie JWT sécurisé
   })
     .then(() => {

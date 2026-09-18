@@ -21,7 +21,7 @@ const Service = () => {
 
   const fetchServices = async () => {
     try {
-       const response = await axios.get('https://gestion-de-stock-vape-shop-api.vercel.app/api/services', {
+       const response = await axios.get('http://localhost:5000/api/services', {
        withCredentials: true,
     });
       setServices(response.data);

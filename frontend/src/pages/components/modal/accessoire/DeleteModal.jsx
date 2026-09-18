@@ -13,7 +13,7 @@ const DeleteModal = ({  accessoire, OnDelete }) => {
  
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://gestion-de-stock-vape-shop-api.vercel.app/api/accessoires/${accessoire._id}`,{
+      await axios.delete(`http://localhost:5000/api/accessoires/${accessoire._id}`,{
        withCredentials: true,
     });
       OnDelete();

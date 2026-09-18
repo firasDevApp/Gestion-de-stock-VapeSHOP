@@ -25,7 +25,7 @@ const UserSettingsModal = ({ user, isOpen, onClose, onUpdate }) => {
   e.preventDefault();
   try {
    
-    await axios.put('https://gestion-de-stock-vape-shop-api.vercel.app/api/settings/update-info', {
+    await axios.put('http://localhost:5000/api/settings/update-info', {
       name,
       email
     }, {
@@ -49,7 +49,7 @@ const UserSettingsModal = ({ user, isOpen, onClose, onUpdate }) => {
   }
 
   try {
-    await axios.put('https://gestion-de-stock-vape-shop-api.vercel.app/api/settings/update-password', {
+    await axios.put('http://localhost:5000/api/settings/update-password', {
       ancienMotDePasse,
       nouveauMotDePasse
     }, {

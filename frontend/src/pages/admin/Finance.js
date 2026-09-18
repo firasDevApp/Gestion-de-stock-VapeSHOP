@@ -31,15 +31,15 @@ const Finance = () => {
 
       if (startDate && endDate) {
         const [depensesRes, revenusRes, stockRes] = await Promise.all([
-          axios.get(`https://gestion-de-stock-vape-shop-api.vercel.app/api/finance/depense`, {
+          axios.get(`http://localhost:5000/api/finance/depense`, {
             params: { startDate, endDate },
              withCredentials: true,
           }),
-          axios.get(`https://gestion-de-stock-vape-shop-api.vercel.app/api/finance/revenus`, {
+          axios.get(`http://localhost:5000/api/finance/revenus`, {
             params: { startDate, endDate },
             withCredentials: true,
           }),
-           axios.get(`https://gestion-de-stock-vape-shop-api.vercel.app/api/finance/stock`, {
+           axios.get(`http://localhost:5000/api/finance/stock`, {
             withCredentials: true,
           })
         ]);

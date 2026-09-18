@@ -26,7 +26,7 @@ const VenteAccsseoireModal = ({ show, accessoires, onHide, OnVente }) => {
     total: quantite * accessoire.prix_vente,
   };
 
-  axios.post('https://gestion-de-stock-vape-shop-api.vercel.app/api/ventes', venteData, {
+  axios.post('http://localhost:5000/api/ventes', venteData, {
     withCredentials: true, // 🔐 on utilise les cookies sécurisés ici
   })
     .then(() => {
